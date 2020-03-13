@@ -1,5 +1,5 @@
 {% set name = "metanetx-post" %}
-{% set version = "0.1.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 578bcd1080a55ef46c86f37eec1f0bbe5331dc8b583ff982f055e9db9baae781
+  sha256: a9ae44e00f9132ff3515312154fd934fd08bbe77c5c869781fbd775495c77304
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - cobra-component-models
     - depinfo
     - httpx
+    - metanetx-assets
     - metanetx-sdk
     - pandas
     - pydantic
